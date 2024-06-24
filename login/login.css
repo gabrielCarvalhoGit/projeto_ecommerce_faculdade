@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+}
+
+
+.card {
+    height: 100vh;
+    width: 100vw;
+    background-color: dimgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__left {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__right {
+    background-size: contain;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__right > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card__right-transparencia {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(105, 105, 105));
+}
+
+.card__texto {
+    width: 60%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: midnightblue;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card__texto-titulo {
+    font-weight: 800;
+    margin: 0;
+}
+
+.card__texto-textfield {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: .5em 0;
+}
+
+.card__texto-textfield > input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 2em 0;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.card__texto-textfield > label {
+    color: white;
+    margin-bottom: .5em
+}
+
+.card__texto-textfield::placeholder {
+    color: white;
+}
+
+.card__texto-button--password {
+    position: absolute;
+    top: 51.5%;
+    left:82.5%;
+    background: transparent;
+    border: 0;
+}
+
+
+.card__texto-button--login {
+    width: 60%;
+    margin: 1em 2em;
+    padding: 1.5em 2em;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(228, 200, 40);
+    box-shadow: 0 5px 20px -12px yellow;
+}
+
+.card__texto-cadastro {
+    color: rgba(170, 170, 170, 0.76);
+    text-decoration: none;
+}

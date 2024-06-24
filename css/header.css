@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.linhaamarela {
+    display: block;
+    background-color: #ffb937;
+    height: 102px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+
+.pp {
+    float: left;
+}
+
+.disco {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-right: 285px;
+}
+
+.imagens img {
+    width: 100%;
+    height: 484;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: visible;
+    background-color: #1d1714;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffcf37;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0000003d;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.navbarimg {
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar li:last-child {
+    margin-right: -50px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.pr {
+    float: right;
+}
+
+.carrinho:hover{
+    opacity: 0.70;
+    cursor: pointer;
+}

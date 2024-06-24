@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "header.css";
+@import "login.css";
+@import "produtos.css";
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #FFCF37;
+  --cor-terciaria: #37FF57;
+  --cor-quarternaria: #FF3737;
+  --cor-texto: #141A1D;
+  --cor-fundo: #1D1714;
+  --cor-hover: #ce9e00;
+
+  --fonte: "Poppins", sans-serif;
+}
+
+html, body {
+  background-color: var(--cor-fundo);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  display: inline;
+  font-family: var(--fonte);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+
+/* #region itens-relacionados */
+h3 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.related-list .item img {
+  width: 90%;
+}
+
+.related-list {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 3fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.related-list .item {
+  background-color: var(--cor-fundo);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.related-list .item h2 {
+  font-weight: 500;
+  font-size: large;
+  color: var(--cor-secundaria);
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.related-list .item .price {
+  margin-left: 10px;
+  color: var(--cor-hover);
+}
+
+.related-list .item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.related-list .item button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .related-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .related-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* #endregion itens-relacionados */
+
+/* #region footer */
+.footer {
+  height: 112.5px;
+  border-top: solid;
+  border-width: 1px;
+  border-color: var(--cor-secundaria);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__newsletter {
+  padding-left: 15%;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--cor-secundaria);
+}
+
+.footer__inscricao {
+  padding: 0px 222px 0px 0px;
+  gap: 9px;
+}
+
+.footer__inscricao > input{
+  width: 232px;
+  height: 37px;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
+  background-color: var(--cor-fundo);
+  color: var(--cor-secundaria);
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+}
+
+.footer__inscricao__inscrever {
+  width: 145px;
+  height: 37px;
+  border: solid;
+  border-width: 1px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+}
+
+.footer__inscricao__inscrever:hover {
+  background-color: var(--cor-hover);
+}
+/* #endregion footer */
