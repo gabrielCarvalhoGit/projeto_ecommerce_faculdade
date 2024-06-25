@@ -7,10 +7,6 @@ let closeCart = document.querySelector('.close');
 let products = [];
 let cart = [];
 
-const usuarioInput = document.getElementById('usuario');
-const senhaInput = document.getElementById('senha');
-const loginButton = document.getElementById('login-btn');
-
 const emailInput = document.querySelector('input[name="email"]');
 const inscreverButton = document.querySelector('.footer__inscricao__inscrever');
 
@@ -53,7 +49,7 @@ function addToCart(id) {
   updateCart();
 }
 
-// salvar e achar quantidade
+// salvar, achar e mudar a quantidade
 function changeQuantity(id, delta) {
   let itemInCart = cart.find(item => item.product.id === id);
   if (itemInCart) {
@@ -103,8 +99,6 @@ inscreverButton.addEventListener('click', (e) => {
   emailInput.value = '';
 });
 
-
-
 // Chama a função de carregar o carrinho quando a página for carregada
 // Carregar o carrinho do localStorage
 function loadCart() {
@@ -136,7 +130,7 @@ function loadProductDetails() {
   }
 }
 
-// Função para obter produtos aleatórios
+// Função para obter produtos aleatórios e excluir o que esta na pagina principal
 function getRandomProducts(excludeId, count) {
   let filteredProducts = products.filter(product => product.id !== excludeId);
   let shuffled = filteredProducts.sort(() => 0.5 - Math.random());

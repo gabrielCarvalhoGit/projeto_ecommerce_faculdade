@@ -5,33 +5,8 @@
     height: 100px;
 }
 
-.linhaamarela {
-    display: block;
-    background-color: #ffb937;
-    height: 102px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 998;
-}
-
 .pp {
     float: left;
-}
-
-.disco {
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-right: 285px;
-}
-
-.imagens img {
-    width: 100%;
-    height: 484;
 }
 
 ul {
@@ -55,6 +30,20 @@ li a {
 
 li a:hover {
     background-color: #0000003d;
+}
+
+.disco {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-right: 285px;
+}
+
+.imagens img {
+    width: 100%;
+    height: 484;
 }
 
 .navbar {
@@ -102,4 +91,15 @@ li a:hover {
 .carrinho:hover{
     opacity: 0.70;
     cursor: pointer;
+}
+
+.linhaamarela {
+    display: block;
+    background-color: #ffb937;
+    height: 102px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
 }
