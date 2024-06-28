@@ -1,0 +1,143 @@
+.checkout__main {
+    min-height: 83vh;
+    width: auto;
+    padding: 0;
+    margin-top: 4em;
+    color: var(--cor-secundaria);
+}
+
+.checkout__lista {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.checkout__disco {
+    width: 80%;
+}
+
+.checkout__linha {
+    border-color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+}
+
+.checkout__linha-main {
+    border-color: var(--cor-secundaria);
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.checkout__disco-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.checkout__disco-conteudo--principal {
+    display: flex;
+}
+
+.checkout__disco-conteudo--principal div {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    margin-left: 2em;
+}
+
+.checkout__disco-nome {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.checkout__disco-conteudo--principal button {
+    background-color: transparent;
+    border: none;
+    width: 25px;
+    cursor: pointer;
+}
+
+.checkout__preco {
+    display: flex;
+    gap: 1em;
+    font-size: 1.25rem;
+}
+
+.checkout__preco-desconto {
+    color: var(--cor-terciaria);
+}
+
+.checkout__quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.checkout__quantidade-botao {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    gap: 2em;
+    padding: .5em 1em;
+    border: 1px solid var(--cor-secundaria);
+    max-width: 25%;
+}
+
+.checkout__quantidade-botao button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width: 30%;
+}
+
+.checkout__quantidade-botao p {
+    width: 0;
+}
+
+.checkout__preco-total--disco {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.checkout__compra {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 1em;
+    margin: 3em 0;
+}
+
+.checkout__compra-button {
+    background-color: var(--cor-secundaria);
+    width: 15%;
+    margin-left: 85%;
+    padding: 1em 2em;
+    font-size: 1.12rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkout__compra-button:hover {
+    background-color: var(--cor-hover);
+}
+
+.checkout__trash:hover {
+    color: var(--cor-hover);
+}
+
+.carrinho,
+.icon-cart span  {
+    display: none;
+}

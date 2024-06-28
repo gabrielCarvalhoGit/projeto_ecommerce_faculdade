@@ -7,17 +7,21 @@ let closeCart = document.querySelector('.close');
 let products = [];
 let cart = [];
 
+const usuarioInput = document.getElementById('usuario');
+const senhaInput = document.getElementById('senha');
+const loginButton = document.getElementById('login-btn');
+
 const emailInput = document.querySelector('input[name="email"]');
 const inscreverButton = document.querySelector('.footer__inscricao__inscrever');
 
 // produtos
 products = [
-  { id: 1, name: 'Álbum WE DON’T TRUST YOU', price: 405.99, img: './images/we dont trust you.png', description: 'Descrição do Álbum WE DON’T TRUST YOU.' },
-  { id: 2, name: 'Álbum 2093', price: 405.99, img: './images/yeat.png', description: 'Descrição do Álbum 2093.' },
-  { id: 3, name: 'Álbum GOOD KID MAAD CITY', price: 127.99, img: './images/good.png', description: 'Descrição do Álbum GOOD KID MAAD CITY.' },
-  { id: 4, name: 'Álbum YE', price: 127.99, img: './images/ye.png', description: 'Descrição do Álbum YE.' },
-  { id: 5, name: 'Álbum UTOPIA', price: 127.99, img: './images/utopia.png', description: 'Descrição do Álbum UTOPIA.' },
-  { id: 6, name: 'Álbum TEEN X', price: 127.99, img: './images/teen x.png', description: 'Descrição do Álbum TEEN X.' },
+  { id: 1, name: 'Álbum WE DON’T TRUST YOU', lastPrice: 449.99, price: 405.99, img: './images/we dont trust you.png', description: 'Descrição do Álbum WE DON’T TRUST YOU.' },
+  { id: 2, name: 'Álbum 2093', lastPrice: 449.99, price: 405.99, img: './images/yeat.png', description: 'Descrição do Álbum 2093.' },
+  { id: 3, name: 'Álbum GOOD KID MAAD CITY', lastPrice: 127.99, price: 127.99, img: './images/good.png', description: 'Descrição do Álbum GOOD KID MAAD CITY.' },
+  { id: 4, name: 'Álbum YE', lastPrice: 127.99, price: 127.99, img: './images/ye.png', description: 'Descrição do Álbum YE.' },
+  { id: 5, name: 'Álbum UTOPIA', lastPrice: 127.99, price: 127.99, img: './images/utopia.png', description: 'Descrição do Álbum UTOPIA.' },
+  { id: 6, name: 'Álbum TEEN X', lastPrice: 127.99, price: 127.99, img: './images/teen x.png', description: 'Descrição do Álbum TEEN X.' },
 ];
 
 // display produtos
@@ -49,7 +53,7 @@ function addToCart(id) {
   updateCart();
 }
 
-// salvar, achar e mudar a quantidade
+// salvar e achar quantidade
 function changeQuantity(id, delta) {
   let itemInCart = cart.find(item => item.product.id === id);
   if (itemInCart) {
@@ -99,6 +103,8 @@ inscreverButton.addEventListener('click', (e) => {
   emailInput.value = '';
 });
 
+
+
 // Chama a função de carregar o carrinho quando a página for carregada
 // Carregar o carrinho do localStorage
 function loadCart() {
@@ -130,7 +136,7 @@ function loadProductDetails() {
   }
 }
 
-// Função para obter produtos aleatórios e excluir o que esta na pagina principal
+// Função para obter produtos aleatórios
 function getRandomProducts(excludeId, count) {
   let filteredProducts = products.filter(product => product.id !== excludeId);
   let shuffled = filteredProducts.sort(() => 0.5 - Math.random());

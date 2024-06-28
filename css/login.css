@@ -61,6 +61,19 @@ body {
     box-shadow: 0 10px 40px #00000056;
 }
 
+.arrow-container {
+    position: relative;
+    float: left;
+}
+
+.card__voltar-home {
+    filter: invert(1);
+    transform: scale(1.5);
+    position: absolute;
+    padding-top: 5px;
+    right: 250px;
+}
+
 .card__texto-titulo {
     font-weight: 800;
     margin: 0;
@@ -119,23 +132,14 @@ body {
     font-weight: 700;
     cursor: pointer;
     background-color: rgb(228, 200, 40);
-    box-shadow: 0 5px 20px -12px yellow;
 }
 
 .card__texto-cadastro {
     color: rgba(170, 170, 170, 0.76);
     text-decoration: none;
+    cursor: pointer;
 }
 
-.arrow-container {
-    position: relative;
-    float: left;
-}
-
-.card__voltar-home {
-    filter: invert(1);
-    transform: scale(1.5);
-    position: absolute;
-    padding-top: 5px;
-    right: 250px;
+.card__texto-cadastro:hover {
+    color: rgba(148, 148, 148, 0.76);
 }

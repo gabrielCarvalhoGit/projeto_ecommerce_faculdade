@@ -46,13 +46,18 @@ svg {
 .listProduct {
     display: grid;
     grid-template-columns: repeat(3, minmax(400px, 3fr));
-    gap: 20px;
+    gap: 3em;
     padding: 20px;
 }
 
 .listProduct .item {
-    background-color: var(--cor-fundo);
+    background-color: #241c19;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.item img {
+    border-radius: 5px;
 }
 
 .listProduct .item h2 {
@@ -200,7 +205,7 @@ body.showCart .container {
 .item {
     border: 2px solid #160f004b;
     border-radius: 1px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 10px 40px #00000056;
     padding: 10px;
 }
 

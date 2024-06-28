@@ -3,6 +3,7 @@
 @import "header.css";
 @import "login.css";
 @import "produtos.css";
+@import "checkout.css";
 
 :root {
   --cor-primaria: #000000;
@@ -26,6 +27,7 @@ html, body {
 }
 
 main {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -104,7 +106,7 @@ h3 {
 
 /* #region footer */
 .footer {
-  height: 112.5px;
+  padding: 2em 0;
   border-top: solid;
   border-width: 1px;
   border-color: var(--cor-secundaria);
@@ -121,33 +123,46 @@ h3 {
 }
 
 .footer__inscricao {
-  padding: 0px 222px 0px 0px;
-  gap: 9px;
+  padding: 0px 15em 0px 0px;
 }
 
 .footer__inscricao > input{
-  width: 232px;
-  height: 37px;
   border: solid;
   border-width: 1px;
   padding: 5px;
   background-color: var(--cor-fundo);
   color: var(--cor-secundaria);
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 400;
   outline: none;
+  padding: .5em 4em .5em .5em;
+  margin-right: 2em;
+}
+
+.footer__inscricao > input::placeholder {
+  color: var(--cor-secundaria);
 }
 
 .footer__inscricao__inscrever {
-  width: 145px;
-  height: 37px;
+  padding: .5em 2em;
   border: solid;
   border-width: 1px;
   background-color: var(--cor-secundaria);
   color: var(--cor-fundo);
+  font-size: 1.12rem;
 }
 
 .footer__inscricao__inscrever:hover {
   background-color: var(--cor-hover);
 }
 /* #endregion footer */
+
+.btn a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+.carrinho,
+.icon-cart span  {
+    display: block;
+}
