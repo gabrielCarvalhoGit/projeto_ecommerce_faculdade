@@ -1,6 +1,6 @@
 .checkout__main {
     min-height: 83vh;
-    width: auto;
+    min-width: 100vw;
     padding: 0;
     margin-top: 4em;
     color: var(--cor-secundaria);
@@ -88,7 +88,7 @@
     gap: 2em;
     padding: .5em 1em;
     border: 1px solid var(--cor-secundaria);
-    max-width: 25%;
+    max-width: 75%;
 }
 
 .checkout__quantidade-botao button {
