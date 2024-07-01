@@ -55,3 +55,8 @@ footer {
     color: #666666; /* Cor do texto do rodapé */
     font-size: 14px; /* Tamanho do texto do rodapé */
 }
+
+.sobre--nos--time {
+    display: flex;
+    flex-direction: column;
+}

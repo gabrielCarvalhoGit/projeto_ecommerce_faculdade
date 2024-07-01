@@ -44,16 +44,15 @@ p {
     margin-bottom: 10px; 
 }
 
-.social-media, .left {
-    text-align: left; /* Alinha .social-media e .left à esquerda */
-    margin-left: 20px; /* Adiciona um espaçamento à esquerda */
+.social-media { 
+   margin-bottom: 1em; 
 }
 
-.social-media h1, .left h2 {
+.social-media h1, h2 {
     color: var(--cor-secundaria);
 }
 
-.social-media ul, .left form {
+.social-media ul, form {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -61,20 +60,6 @@ p {
 
 .social-media li {
     margin-bottom: 10px;
-}
-
-.left form {
-    margin-top: 20px;
-}
-
-.left form label {
-    display: block;
-    text-align: left; /* Ajusta o alinhamento do texto das labels à esquerda */
-}
-
-.left form input,
-.left form textarea {
-    width: 100%;
 }
 
 .contact-us .social-media li a {
@@ -146,4 +131,17 @@ form button:hover {
     .about-us p, .about-us ul {
         margin-bottom: 10px; /* Reduz o espaçamento inferior para telas menores */
     }
+}
+
+#contact-form {
+    border: 2px solid var(--cor-secundaria);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.contato--info {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }

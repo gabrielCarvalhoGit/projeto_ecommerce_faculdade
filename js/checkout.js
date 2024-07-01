@@ -16,7 +16,7 @@ if (produtos == false){
 
     ulCheckout.innerHTML = `<div class="checkout__vazio">
                                 <h1>Parece que você não adicionou nenhum item ao seu carrinho,<br>deseja voltar à pagina de produtos?</h1>
-                                <a href="home.html">Retornar</a>
+                                <a href="index.html">Retornar</a>
                             </div>`
 }
 

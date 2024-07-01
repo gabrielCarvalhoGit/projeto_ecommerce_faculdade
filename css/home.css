@@ -4,6 +4,8 @@
 @import "login.css";
 @import "produtos.css";
 @import "checkout.css";
+@import "sobrenos.css";
+@import "contato.css";
 
 :root {
   --cor-primaria: #000000;
@@ -106,6 +108,7 @@ h3 {
 
 /* #region footer */
 .footer {
+  background-color: transparent;
   padding: 2em 0;
   border-top: solid;
   border-width: 1px;
