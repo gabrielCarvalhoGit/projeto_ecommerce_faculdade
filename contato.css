@@ -1,0 +1,149 @@
+/* Estilos para a página de contato */
+
+body {
+    font-family: var(--fonte);
+}
+
+.main {
+    padding: 20px; 
+    background-color: var(--cor-fundo);
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centraliza o container .main na página */
+}
+
+p {
+    color: var(--cor-secundaria);
+    text-align: left; /* Alinha parágrafos à esquerda */
+}
+
+.contact-us h1, .contact-us h2, .contact-us h3 {
+    color: var(--cor-secundaria);
+    text-align: left; /* Alinha títulos dentro de .contact-us à esquerda */
+}
+
+.contact-us ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Alinha listas dentro de .contact-us à esquerda */
+}
+.center{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us ul li {
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    padding: 5px; 
+    margin: 5px 0; 
+    border-radius: 5px;
+}
+
+.contact-us .address {
+    margin-bottom: 10px; 
+}
+
+.social-media, .left {
+    text-align: left; /* Alinha .social-media e .left à esquerda */
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda */
+}
+
+.social-media h1, .left h2 {
+    color: var(--cor-secundaria);
+}
+
+.social-media ul, .left form {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    margin-bottom: 10px;
+}
+
+.left form {
+    margin-top: 20px;
+}
+
+.left form label {
+    display: block;
+    text-align: left; /* Ajusta o alinhamento do texto das labels à esquerda */
+}
+
+.left form input,
+.left form textarea {
+    width: 100%;
+}
+
+.contact-us .social-media li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contact-us .social-media li a:hover {
+    background-color: #00000055;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Alinha o formulário à esquerda */
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda */
+}
+
+form label {
+    margin: 5px 0 2px; 
+    color: var(--cor-secundaria);
+}
+
+form input,
+form textarea {
+    padding: 5px;
+    margin-bottom: 10px; 
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    outline: none;
+}
+
+form button {
+    padding: 7px; 
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px; /* Reduz o padding para telas menores */
+        margin: 10px auto; /* Reduz a margem para telas menores */
+    }
+
+    .about-us {
+        padding: 15px;
+    }
+
+    .about-us h1 {
+        font-size: 22px; /* Reduz o tamanho do título para telas menores */
+    }
+
+    .about-us h2 {
+        font-size: 18px; /* Reduz o tamanho do subtítulo para telas menores */
+    }
+
+    .about-us p, .about-us ul {
+        margin-bottom: 10px; /* Reduz o espaçamento inferior para telas menores */
+    }
+}
