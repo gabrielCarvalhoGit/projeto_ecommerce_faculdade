@@ -34,7 +34,7 @@ function produtoCheckout(id) {
                         <img src="${id.product.img}" alt="${id.product.name}">
                         <div>
                             <h2 class="checkout__disco-nome">${id.product.name}</h2>
-                            <button onclick="apagarItemCheckout(${id.product.id})"><img src="/images/trash.svg" alt="Lixeiro de compras" class="checkout__trash" ></button>
+                            <button onclick="apagarItemCheckout(${id.product.id})"><img src="./images/trash.svg" alt="Lixeiro de compras" class="checkout__trash" ></button>
                         </div>
                     </div>
 
@@ -45,9 +45,9 @@ function produtoCheckout(id) {
                     
                     <div class="checkout__quantidade">
                         <div class="checkout__quantidade-botao">
-                            <button onclick="quantidadeProdutoCheckout(${id.product.id}, -1)"><img src="/images/menos.svg"></button>
+                            <button onclick="quantidadeProdutoCheckout(${id.product.id}, -1)"><img src="./images/menos.svg"></button>
                             <p>${id.quantity}</p>
-                            <button onclick="quantidadeProdutoCheckout(${id.product.id}, 1)"><img src="/images/mais.svg"></button>
+                            <button onclick="quantidadeProdutoCheckout(${id.product.id}, 1)"><img src="./images/mais.svg"></button>
                         </div>
                         <h3 class="checkout__preco-total--disco">R$ ${(precoTotal).toFixed(2).toString().replace('.', ',')}</h3>
                     </div>
