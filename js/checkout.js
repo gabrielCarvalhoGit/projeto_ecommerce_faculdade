@@ -1,5 +1,7 @@
 const ulCheckout = document.querySelector('.checkout__lista');
 const precoTotalTexto = document.querySelector('#preco_total')
+const linhaCheckout = document.querySelector('.checkout__linha-main');
+const compraCheckout = document.querySelector('.checkout__compra');
 
 let produtos = JSON.parse(localStorage.getItem('cart')) || [];
 let precoTotalCheckout = 0;
@@ -7,6 +9,16 @@ let precoTotalCheckout = 0;
 precoTotalTexto.innerHTML = precoTotalCheckout;
 
 loadCart();
+
+if (produtos == false){
+    linhaCheckout.classList.add('hidden');
+    compraCheckout.classList.add('hidden');
+
+    ulCheckout.innerHTML = `<div class="checkout__vazio">
+                                <h1>Parece que você não adicionou nenhum item ao seu carrinho,<br>deseja voltar à pagina de produtos?</h1>
+                                <a href="home.html">Retornar</a>
+                            </div>`
+}
 
 function produtoCheckout(id) {
     const precoTotal = (id.product.price) * (id.quantity);
@@ -65,10 +77,21 @@ function quantidadeProdutoCheckout(id, num) {
 
     precoTotalCheckout = 0;
     ulCheckout.innerHTML = ''
-    produtos.forEach(produto => {
-        const elementoProduto = produtoCheckout(produto);
-        ulCheckout.append(elementoProduto);
-    });
+    if (produtos == false){
+        linhaCheckout.classList.add('hidden');
+        compraCheckout.classList.add('hidden');
+
+        ulCheckout.innerHTML = `<div class="checkout__vazio">
+                                <h1>Parece que você não adicionou nenhum item ao seu carrinho,<br>deseja voltar à pagina de produtos?</h1>
+                                <a href="home.html">Retornar</a>
+                            </div>`
+    }else{
+        ulCheckout.innerHTML = ''
+        produtos.forEach(produto => {
+            const elementoProduto = produtoCheckout(produto);
+            ulCheckout.append(elementoProduto);
+        });
+    } 
 }
 
 function apagarItemCheckout(id) {
@@ -81,8 +104,19 @@ function apagarItemCheckout(id) {
     precoTotalCheckout = 0;
     precoTotalTexto.innerHTML = ''
     ulCheckout.innerHTML = ''
-    produtos.forEach(produto => {
-        const elementoProduto = produtoCheckout(produto);
-        ulCheckout.append(elementoProduto);
-    });
+    if (produtos == false){
+        linhaCheckout.classList.add('hidden');
+        compraCheckout.classList.add('hidden');
+
+        ulCheckout.innerHTML = `<div class="checkout__vazio">
+                                <h1>Parece que você não adicionou nenhum item ao seu carrinho,<br>deseja voltar à pagina de produtos?</h1>
+                                <a href="home.html">Retornar</a>
+                            </div>`
+    }else{
+        ulCheckout.innerHTML = ''
+        produtos.forEach(produto => {
+            const elementoProduto = produtoCheckout(produto);
+            ulCheckout.append(elementoProduto);
+        });
+    }
 }

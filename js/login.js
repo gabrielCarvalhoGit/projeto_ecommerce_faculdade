@@ -12,7 +12,7 @@ loginButton.addEventListener('click', (e) => {
         alert('Por favor, preencha o campo de senha.');
         e.preventDefault();
     } else {
-        window.location.href = './index.html';
+        window.location.href = './home.html';
     }
 });
 
