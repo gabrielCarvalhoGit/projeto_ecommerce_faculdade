@@ -103,8 +103,6 @@ inscreverButton.addEventListener('click', (e) => {
   emailInput.value = '';
 });
 
-
-
 // Chama a função de carregar o carrinho quando a página for carregada
 // Carregar o carrinho do localStorage
 function loadCart() {
@@ -151,7 +149,7 @@ function displayRelatedProducts(excludeId) {
   relatedProducts.forEach(product => {
     let itemHTML = `
       <div class="item c related-list2">
-        <a href="product.html?id=${product.id}">
+        <a href="products.html?id=${product.id}">
           <img src="${product.img}" alt="${product.name}">
           <h2>${product.name}</h2>
           <div class="price">R$ ${product.price.toFixed(2)}</div>
