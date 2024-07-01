@@ -44,6 +44,10 @@ p {
     margin-bottom: 10px; 
 }
 
+.contact-us {
+    width: 50vw;
+}
+
 .social-media { 
    margin-bottom: 1em; 
 }
@@ -134,6 +138,8 @@ form button:hover {
 }
 
 #contact-form {
+    display: flex;
+    flex-direction: column;
     border: 2px solid var(--cor-secundaria);
     padding: 2em;
     border-radius: 1em;

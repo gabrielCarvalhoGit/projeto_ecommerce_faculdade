@@ -49,8 +49,8 @@ body {
 }
 
 .card__texto {
-    width: 60%;
-    height: 45%;
+    width: 30vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
